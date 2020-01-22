@@ -1,0 +1,73 @@
+[
+  {
+    "description": "    E2E test scenario to cover one customer journey on Amazon website\n    including navigating to the website\n    searching a product\n    adding it to the cart\n    and proceeding to checkout",
+    "keyword": "Feature",
+    "name": "Amazon customer journey",
+    "line": 1,
+    "id": "amazon-customer-journey",
+    "tags": [],
+    "uri": "features\\amazon.feature",
+    "elements": [
+      {
+        "id": "amazon-customer-journey;verify-the-functionality-to-buy-a-product-from-amazon-website",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verify the functionality to buy a product from amazon website",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 9,
+            "name": "User navigates to \"https://www.amazon.com.au\"",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2460000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "User search for product \"Harry Potter Book Set\"",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2946000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "User add the product to cart and proceed to checkout",
+            "match": {
+              "location": "features\\stepDefinitions\\stepDefinition.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7036000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
