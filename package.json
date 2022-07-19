@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cucumber": "^6.0.5",
-    "properties-reader": "^1.0.0"
+    "properties-reader": "^2.2.0"
   },
   "devDependencies": {
     "cucumber-html-reporter": "^5.1.0",
